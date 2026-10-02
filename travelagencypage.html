@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Descripción de la página para motores de búsqueda (SEO) -->
+  <meta name="description" content="Discover world-class destinations, luxury group travels, and private tours with Coronado Global Travel.">
+  <title>Travel Agency Page</title>
+
+  <style>
+    /* Reset global: quita márgenes/paddings por defecto e incluye borde y padding en el ancho total */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos generales del fondo y la tipografía de la página */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b132b; /* Azul muy oscuro de fondo */
+      color: #e0e6ed;            /* Color del texto (gris claro) */
+      line-height: 1.6;          /* Interlineado cómodo para lectura */
+      padding: 2rem 1rem;
+    }
+
+    /* Tarjeta o contenedor principal del contenido */
+    header, main {
+      max-width: 900px;                             /* Ancho máximo centrado */
+      margin: 0 auto;                               /* Centra el contenedor horizontalmente */
+      background: #1c2541;                          /* Azul marino para el contenedor */
+      padding: 2.5rem;                              /* Espacio interno */
+      border-radius: 12px;                          /* Bordes redondeados */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);   /* Sombra exterior para dar profundidad */
+      border: 1px solid #3a506b;                    /* Borde azul sutil */
+    }
+
+    /* Título principal de la página */
+    h1 {
+      color: #6fffe9;              /* Color cian/turquesa brillante */
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      border-bottom: 2px solid #5bc0be; /* Línea divisoria debajo del título */
+      padding-bottom: 0.5rem;
+    }
+
+    /* Párrafo introductorio bajo el h1 */
+    .intro {
+      font-size: 1.15rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      color: #c0d6df;
+    }
+
+    /* Títulos secundarios (Packages y Top Itineraries) */
+    h2 {
+      color: #5bc0be;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    /* Párrafos de texto estándar */
+    p {
+      margin-bottom: 1rem;
+    }
+
+    /* Lista de paquetes */
+    ul {
+      list-style-type: square; /* Viñetas con formato de cuadrado */
+      padding-left: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Enlaces / Links */
+    a {
+      color: #6fffe9;
+      text-decoration: none;      /* Quita el subrayado por defecto */
+      font-weight: bold;
+      transition: color 0.3s ease; /* Transición suave al cambiar de color */
+    }
+
+    /* Efecto al pasar el cursor sobre un enlace */
+    a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    /* Cuadrícula adaptativa para las 3 tarjetas de itinerarios */
+    .itineraries-grid {
+      display: grid;
+      /* Genera columnas automáticas con un ancho mínimo de 250px cada una */
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;                 /* Espacio entre tarjetas */
+      margin-top: 1rem;
+    }
+
+    /* Estructura de cada tarjeta individual */
+    figure {
+      background-color: #0b132b;
+      border-radius: 8px;
+      overflow: hidden;             /* Recorta la imagen para respetar bordes redondeados */
+      border: 1px solid #3a506b;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación para el hover */
+    }
+
+    /* Efecto de elevación y brillo al pasar el mouse por la tarjeta */
+    figure:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(111, 255, 233, 0.2);
+    }
+
+    /* Formato de las imágenes dentro de las tarjetas */
+    figure img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;            /* Mantiene la proporción sin deformar la imagen */
+      display: block;               /* Elimina espacios inferiores en blanco */
+    }
+
+    /* Descripción debajo de cada imagen */
+    figcaption {
+      padding: 1rem;
+      font-size: 0.95rem;
+      color: #d1d5db;
+      text-align: center;
+    }
+
+    /* Pie de página */
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenedor Principal de la Página -->
+  <main>
+    <!-- Encabezado con título e introducción -->
+    <h1>Coronado Agency Travel Destinations</h1>
+    <p class="intro">Explore handpicked luxury destinations and extraordinary travel opportunities designed to create unforgettable lifelong experiences across the globe.</p>
+
+    <!-- Sección de Paquetes Ofertados -->
+    <h2>Packages</h2>
+    <p>We offer tailored travel options designed to suit every journey style, whether traveling with a group or enjoying exclusive private tours.</p>
+    <ul>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a></li>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a></li>
+    </ul>
+
+    <!-- Sección de Itinerarios en Cuadrícula -->
+    <h2>Top Itineraries</h2>
+    <div class="itineraries-grid">
+
+      <!-- Tarjeta 1: Roma -->
+      <figure>
+        <a href="https://www.freecodecamp.org/learn" target="_blank">
+          <img src="https://goo.su/JVmCfP" alt="The ancient Colosseum in Rome under a bright sky">
+        </a>
+        <figcaption>Discover the rich ancient history and iconic architecture of Rome, Italy.</figcaption>
+      </figure>
+
+      <!-- Tarjeta 2: Los Alpes -->
+      <figure>
+        <a href="https://www.freecodecamp.org/learn" target="_blank">
+          <img src="https://goo.su/vMZH" alt="Snowy peak of the majestic Alps mountains">
+        </a>
+        <figcaption>Experience breathtaking alpine landscapes and mountain adventures in the French Alps.</figcaption>
+      </figure>
+
+      <!-- Tarjeta 3: Playa -->
+      <figure>
+        <a href="https://www.freecodecamp.org/learn" target="_blank">
+          <img src="https://goo.su/zW0ZjDW" alt="Crystal clear turquoise ocean waters bordering a sandy beach">
+        </a>
+        <figcaption>Relax at serene seaside escapes along pristine turquoise waters of the Caribbean.</figcaption>
+      </figure>
+
+    </div>
+  </main>
+
+  <!-- Pie de página con copyright -->
+  <footer>
+    <p>&copy; Coronado Agency Travel. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
